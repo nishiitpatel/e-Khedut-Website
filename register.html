@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - e-Khedut</title>
+</head>
+<body style="background-color: #f1f8e9;">
+
+  <!-- Header -->
+   <header style="background-color: #c9a227; padding: 15px; color: 2c2416;">
+    <h2 style="display: inline-flex; align-items: center; gap: 8px; margin: 0;">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+             <line x1="30" y1="10" x2="30" y2="90" stroke="white" stroke-width="8"/>
+             <line x1="30" y1="50" x2="70" y2="10" stroke="white" stroke-width="8"/>
+             <line x1="30" y1="50" x2="70" y2="90" stroke="white" stroke-width="8"/>
+      </svg>
+      e - Khedut
+    </h2>
+    <nav style="float: right; margin-top: 50px;">
+      <a href="index.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">Home</a>
+      <a href="marketplace.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">Marketplace</a>
+      <a href="dashboard.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">Dashboard</a>
+      <a href="about.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">About</a>
+      <a href="contact.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">Contact</a>
+      <a href="login.html" style="background-color: #faf6ed; color:black; margin: 0 10px; padding: 4px 10px; text-decoration: none;">Login</a>
+      <a href="register.html" style="background-color: #00bbff ;color:black; margin: 0 10px; padding: 4px 10px; text-decoration: none;">Register</a>
+    </nav>
+    <div style="clear: both;"></div>
+  </header>
+
+  <!-- Register Form -->
+  <div style="max-width: 480px; margin: 50px auto; background: white; padding: 30px; border: 1px solid #ccc;">
+    <h2 style="text-align: center; color: #c9a227;">Create Account</h2>
+    <p style="text-align: center;">Already have an account? <a href="login.html">Sign in</a></p>
+    <br>
+
+    <form onsubmit="alert('Account created successfully! Welcome to e-Khedut.'); window.location.href='dashboard.html'; return false;">
+      <table cellpadding="6" style="width: 100%;">
+        <tr>
+          <td>
+            <label>First Name:</label><br>
+            <input type="text" placeholder="First name" style="width: 100%; padding: 9px; border: 1px solid #ccc; box-sizing: border-box;" required>
+          </td>
+          <td>
+            <label>Last Name:</label><br>
+            <input type="text" placeholder="Last name" style="width: 100%; padding: 9px; border: 1px solid #ccc; box-sizing: border-box;" required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" style="width: 100%; padding: 9px; border: 1px solid #ccc; box-sizing: border-box;" required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>Email Address:</label><br>
+            <input type="email" placeholder="you@example.com" style="width: 100%; padding: 9px; border: 1px solid #ccc; box-sizing: border-box;" required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>I am a:</label><br>
+            <select style="width: 100%; padding: 9px; border: 1px solid #ccc; box-sizing: border-box;" required>
+              <option value="">Select your role</option>
+              <option>Farmer - I want to sell crops</option>
+              <option>Buyer - I want to purchase crops</option>
+              <option>Both - I buy and sell crops</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>Village/City, District:</label><br>
+            <input type="text" placeholder="e.g., Anand, Gujarat" style="width: 100%; padding: 9px; border: 1px solid #ccc; box-sizing: border-box;" required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>Password:</label><br>
+            <input type="password" id="regPassword" placeholder="Create a strong password" style="width: 100%; padding: 9px; border: 1px solid #ccc; box-sizing: border-box;" required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" id="showPass" onclick="document.getElementById('regPassword').type = this.checked ? 'text' : 'password'">
+            <label for="showPass">Show Password</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" required>
+            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Create Account" style="width: 100%; background-color: #c9a227; color: white; padding: 12px; border: none; font-size: 16px; cursor: pointer;">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background-color: #5c4a1f; color: white; padding: 20px; text-align: center; margin-top: 40px;">
+    <p style="color: rgba(255, 255, 255, 0.5);">© 2026 e-Khedut. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

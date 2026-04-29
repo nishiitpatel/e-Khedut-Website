@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace - e-Khedut</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header style="background-color: #c9a227; padding: 15px; color: 2c2416;">
+    <h2 style="display: inline-flex; align-items: center; gap: 8px; margin: 0;">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+             <line x1="30" y1="10" x2="30" y2="90" stroke="white" stroke-width="8"/>
+             <line x1="30" y1="50" x2="70" y2="10" stroke="white" stroke-width="8"/>
+             <line x1="30" y1="50" x2="70" y2="90" stroke="white" stroke-width="8"/>
+      </svg>
+      e - Khedut
+    </h2>
+    <nav style="float: right; margin-top: 50px;">
+      <a href="index.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">Home</a>
+      <a href="marketplace.html" style="color:#faf6ed; margin: 0 10px; text-decoration: none;">Marketplace</a>
+      <a href="dashboard.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">Dashboard</a>
+      <a href="about.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">About</a>
+      <a href="contact.html" style="color:#2c2416; margin: 0 10px; text-decoration: none;">Contact</a>
+      <a href="login.html" style="background-color: #faf6ed; color:black; margin: 0 10px; padding: 4px 10px; text-decoration: none;">Login</a>
+      <a href="register.html" style="background-color: #faf6ed ;color:black; margin: 0 10px; padding: 4px 10px; text-decoration: none;">Register</a>
+    </nav>
+    <div style="clear: both;"></div>
+  </header>
+
+  <!-- Marketplace Hero -->
+  <section style="background-color: #5c4a1f; color: white; padding: 40px; text-align: center;">
+    <h1>Crop Marketplace</h1>
+    <p>Browse thousands of fresh produce listings directly from verified farmers</p>
+    <br>
+    <input type="text" placeholder="Search for crops, vegetables, grains..." style="padding: 10px; width: 50%; font-size: 16px;">
+    <button style="padding: 10px 20px; background: #c9a227; color: white; border: none; font-size: 16px; cursor: pointer;">Search</button>
+    <br><br>
+    <button style="margin: 4px; padding: 8px 15px; background: white; color: black; border: none; cursor: pointer;">All</button>
+    <button style="margin: 4px; padding: 8px 15px; background: transparent; color: white; border: 1px solid white; cursor: pointer;">Grains</button>
+    <button style="margin: 4px; padding: 8px 15px; background: transparent; color: white; border: 1px solid white; cursor: pointer;">Vegetables</button>
+    <button style="margin: 4px; padding: 8px 15px; background: transparent; color: white; border: 1px solid white; cursor: pointer;">Fruits</button>
+    <button style="margin: 4px; padding: 8px 15px; background: transparent; color: white; border: 1px solid white; cursor: pointer;">Pulses</button>
+    <button style="margin: 4px; padding: 8px 15px; background: transparent; color: white; border: 1px solid white; cursor: pointer;">Spices</button>
+  </section>
+
+  <!-- Main Content -->
+  <div style="display: flex; padding: 30px 40px; gap: 30px;">
+
+    <!-- Filters Sidebar -->
+    <div style="width: 220px; min-width: 220px; background: #f9f9f9; padding: 20px; border: 1px solid #ddd;">
+      <h3>Filters</h3>
+
+      <h4>Category</h4>
+      <label><input type="checkbox"> Grains & Cereals</label><br>
+      <label><input type="checkbox"> Vegetables</label><br>
+      <label><input type="checkbox"> Fruits</label><br>
+      <label><input type="checkbox"> Pulses & Legumes</label><br>
+      <label><input type="checkbox"> Oilseeds</label><br>
+      <label><input type="checkbox"> Spices</label><br>
+
+      <br>
+      <h4>Price Range (per quintal)</h4>
+      <input type="number" placeholder="Min" style="width: 80px; padding: 5px;"> -
+      <input type="number" placeholder="Max" style="width: 80px; padding: 5px;">
+
+      <br><br>
+      <h4>Location</h4>
+      <label><input type="checkbox"> Arvalli</label><br>
+      <label><input type="checkbox"> Mehsana</label><br>
+      <label><input type="checkbox"> Ahmedabad</label><br>
+      <label><input type="checkbox"> Junagadh</label><br>
+      <label><input type="checkbox"> Surat</label><br>
+
+      <br>
+      <h4>Quality Grade</h4>
+      <label><input type="checkbox"> Premium (A+)</label><br>
+      <label><input type="checkbox"> Grade A</label><br>
+      <label><input type="checkbox"> Grade B</label><br>
+
+      <br>
+      <button style="width: 100%; background: #c9a227; color: white; padding: 10px; border: none; cursor: pointer; margin-bottom: 5px;">Apply Filters</button>
+      <button style="width: 100%; background: #eee; color: #333; padding: 10px; border: 1px solid #ccc; cursor: pointer;">Clear All</button>
+    </div>
+
+    <!-- Crop Listings -->
+    <div style="flex: 1;">
+      <h2>245 Crops Available</h2>
+      <br>
+
+      <!-- Crop Cards in Table Layout -->
+      <table cellpadding="15" cellspacing="10" style="width: 100%;">
+        <tr>
+          <!-- Card 1 -->
+          <td style="border: 1px solid #ddd; width: 30%; vertical-align: top; background: #fff;">
+            <img src="pic2.jpg" alt="Wheat" style="width: 100%; height: 150px; object-fit: cover; background: #e5d4a1;">
+            <h3>Organic Wheat</h3>
+            <p>Rameshlal Patel, Arvalli</p>
+            <p><b style="color: #c9a227; font-size: 18px;">₹2,450 /quintal</b></p>
+            <p>⭐ 4.8 (124 reviews)</p>
+            <button style="width: 100%; background: #c9a227; color: white; padding: 8px; border: none; cursor: pointer;">Contact Seller</button>
+          </td>
+
+          <!-- Card 2 -->
+          <td style="border: 1px solid #ddd; width: 30%; vertical-align: top; background: #fff;">
+            <img src="pic3.jpg" alt="Tomatoes" style="width: 100%; height: 150px; object-fit: cover; background: #f87171;">
+            <h3>Fresh Tomatoes</h3>
+            <p>Ramanlal Patel, Ahmedabad</p>
+            <p><b style="color: #c9a227; font-size: 18px;">₹1,800 /quintal</b></p>
+            <p>⭐ 4.6 (89 reviews)</p>
+            <button style="width: 100%; background: #c9a227; color: white; padding: 8px; border: none; cursor: pointer;">Contact Seller</button>
+          </td>
+
+          <!-- Card 3 -->
+          <td style="border: 1px solid #ddd; width: 30%; vertical-align: top; background: #fff;">
+            <img src="pic5.jpg" alt="Rice" style="width: 100%; height: 150px; object-fit: cover; background: #fef08a;">
+            <h3>Basmati Rice</h3>
+            <p>Sudhir Dala, Mehsana</p>
+            <p><b style="color: #c9a227; font-size: 18px;">₹5,200 /quintal</b></p>
+            <p>⭐ 4.9 (256 reviews)</p>
+            <button style="width: 100%; background: #c9a227; color: white; padding: 8px; border: none; cursor: pointer;">Contact Seller</button>
+          </td>
+        </tr>
+        <tr>
+          <!-- Card 4 -->
+          <td style="border: 1px solid #ddd; width: 30%; vertical-align: top; background: #fff;">
+            <img src="pic6.jpg" alt="Carrots" style="width: 100%; height: 150px; object-fit: cover; background: #fdba74;">
+            <h3>Fresh Carrots</h3>
+            <p>Mahesh Delvadiya, Amreli</p>
+            <p><b style="color: #c9a227; font-size: 18px;">₹1,200 /quintal</b></p>
+            <p>⭐ 4.5 (67 reviews)</p>
+            <button style="width: 100%; background: #c9a227; color: white; padding: 8px; border: none; cursor: pointer;">Contact Seller</button>
+          </td>
+
+          <!-- Card 5 -->
+          <td style="border: 1px solid #ddd; width: 30%; vertical-align: top; background: #fff;">
+            <img src="pic7.jpg" alt="Dal" style="width: 100%; height: 150px; object-fit: cover; background: #d97706;">
+            <h3>Toor Dal</h3>
+            <p>Bipin Suthar, Kutchh</p>
+            <p><b style="color: #c9a227; font-size: 18px;">₹8,500 /quintal</b></p>
+            <p>⭐ 4.7 (198 reviews)</p>
+            <button style="width: 100%; background: #c9a227; color: white; padding: 8px; border: none; cursor: pointer;">Contact Seller</button>
+          </td>
+
+          <!-- Card 6 -->
+          <td style="border: 1px solid #ddd; width: 30%; vertical-align: top; background: #fff;">
+            <img src="pic8.jpg" alt="Mango" style="width: 100%; height: 150px; object-fit: cover; background: #fbbf24;">
+            <h3>Alphonso Mangoes</h3>
+            <p>Rajesh Deshmukh, Ratnagiri</p>
+            <p><b style="color: #c9a227; font-size: 18px;">₹12,000 /quintal</b></p>
+            <p>⭐ 4.9 (312 reviews)</p>
+            <button style="width: 100%; background: #c9a227; color: white; padding: 8px; border: none; cursor: pointer;">Contact Seller</button>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Pagination -->
+      <br>
+      <div style="text-align: center;">
+        <button style="padding: 8px 15px; margin: 3px; border: 1px solid #ccc; cursor: pointer;">← Previous</button>
+        <button style="padding: 8px 15px; margin: 3px; background: #c9a227; color: white; border: none; cursor: pointer;">1</button>
+        <button style="padding: 8px 15px; margin: 3px; border: 1px solid #ccc; cursor: pointer;">2</button>
+        <button style="padding: 8px 15px; margin: 3px; border: 1px solid #ccc; cursor: pointer;">3</button>
+        <button style="padding: 8px 15px; margin: 3px; border: 1px solid #ccc; cursor: pointer;">4</button>
+        <button style="padding: 8px 15px; margin: 3px; border: 1px solid #ccc; cursor: pointer;">5</button>
+        <button style="padding: 8px 15px; margin: 3px; border: 1px solid #ccc; cursor: pointer;">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background-color: #5c4a1f; color: white; padding: 30px; text-align: center;">
+    <p><b>e-Khedut</b> - Empowering farmers with digital tools.</p>
+    <p>
+      <a href="marketplace.html" style="color:rgba(255, 255, 255, 0.7); margin: 0 10px;">Marketplace</a>
+      <a href="about.html" style="color: rgba(255, 255, 255, 0.7); margin: 0 10px;">About Us</a>
+      <a href="contact.html" style="color: rgba(255, 255, 255, 0.7); margin: 0 10px;">Contact</a>
+      <a href="#" style="color: rgba(255, 255, 255, 0.7); margin: 0 10px;">Privacy Policy</a>
+    </p>
+    <p style="color: rgba(255, 255, 255, 0.5);">© 2026 e-Khedut. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
